@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе «Горище» у Василькові — Галерея</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 flex items-center gap-2">
+                <span>☕</span> Кафе «Горище»
+            </a>
+            <nav class="hidden md:flex gap-1 items-center">
+                <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Головна</a>
+                <a href="about.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Про нас</a>
+                <a href="services.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Меню</a>
+                <a href="gallery.html" class="px-4 py-2 rounded-lg bg-amber-500 text-stone-950 font-medium transition">Галерея</a>
+                <a href="booking.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Бронювання</a>
+                <a href="contacts.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-stone-900 border-b border-stone-800 py-3 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-stone-400">
+            <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Галерея</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-amber-500 mb-4">Фотогалерея</h1>
+            <p class="text-stone-400 max-w-2xl mx-auto">Атмосфера нашого закладу у кожному кадрі.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Кафе інтер'єр" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800" alt="Кава та десерти" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Затишний зал" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&q=80&w=800" alt="Напої" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&q=80&w=800" alt="Кальян" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=80&w=800" alt="Вечірня атмосфера" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-400 py-12 px-6 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">Кафе «Горище»</h3>
+                <p class="mb-4">Затишний заклад у Василькові для приємного відпочинку та спілкування.</p>
+                <p class="text-sm">© 2024 Усі права захищено.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Контакти</h4>
+                <p class="mb-2">вулиця Соборна, 121, Васильків</p>
+                <p class="mb-2">+380680903120</p>
+                <p class="mb-2">info@goryshhe.ua</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Графік роботи</h4>
+                <p class="mb-2">Понеділок - Неділя</p>
+                <p class="mb-2">09:00 - 00:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
