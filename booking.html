@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе «Горище» у Василькові — Бронювання</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 flex items-center gap-2">
+                <span>☕</span> Кафе «Горище»
+            </a>
+            <nav class="hidden md:flex gap-1 items-center">
+                <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Головна</a>
+                <a href="about.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Про нас</a>
+                <a href="services.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Меню</a>
+                <a href="gallery.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Галерея</a>
+                <a href="booking.html" class="px-4 py-2 rounded-lg bg-amber-500 text-stone-950 font-medium transition">Бронювання</a>
+                <a href="contacts.html" class="px-4 py-2 rounded-lg hover:bg-amber-500/10 hover:text-amber-500 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-stone-900 border-b border-stone-800 py-3 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-stone-400">
+            <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Бронювання</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-stone-900 rounded-3xl shadow-2xl p-8 md:p-12 border border-stone-800">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl md:text-4xl font-bold text-amber-500 mb-2">Бронювання столика</h1>
+                <p class="text-stone-400">Заповніть форму нижче, і ми зв'яжемося з вами для підтвердження броні.</p>
+            </div>
+
+            <form action="https://formsubmit.co/info@goryshhe.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-stone-300 font-medium mb-2">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition" placeholder="Введіть ваше ім'я">
+                </div>
+                <div>
+                    <label class="block text-stone-300 font-medium mb-2">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition" placeholder="+380...">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-stone-300 font-medium mb-2">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-stone-300 font-medium mb-2">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-stone-300 font-medium mb-2">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" max="20" value="2" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-stone-300 font-medium mb-2">Побажання чи коментар</label>
+                    <textarea name="comment" rows="4" class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition" placeholder="Бажаєте столик біля вікна чи кальян?"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Забронювати</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-400 py-12 px-6 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">Кафе «Горище»</h3>
+                <p class="mb-4">Затишний заклад у Василькові для приємного відпочинку та спілкування.</p>
+                <p class="text-sm">© 2024 Усі права захищено.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Контакти</h4>
+                <p class="mb-2">вулиця Соборна, 121, Васильків</p>
+                <p class="mb-2">+380680903120</p>
+                <p class="mb-2">info@goryshhe.ua</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Графік роботи</h4>
+                <p class="mb-2">Понеділок - Неділя</p>
+                <p class="mb-2">09:00 - 00:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
